@@ -1,0 +1,8 @@
+TODO: 
+
+Instale o apache2
+Instale o php
+Instale o mysql
+Instale o mysqli (extensão do pgp)
+Copie o conteúdo da pasta web para:
+    /var/www/

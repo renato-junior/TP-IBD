@@ -1,0 +1,9 @@
+@font-face {
+    font-family: Quantum;
+    src: url(/fonts/quantum.otf);
+}
+
+h1 {
+    font-family: Quantum;
+    font-size: 60px;
+}
