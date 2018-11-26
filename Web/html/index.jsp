@@ -1,64 +1,40 @@
 <html>
 
 <head>
-    <meta charset="UTF-8">
-    <title>WebIBD</title>
-    <link rel="stylesheet" type="text/css" href="css/global.css">
-    <link rel="stylesheet" type="text/css" href="css/fonts.css">
+	<meta charset="UTF-8">
+	<title>WebIBD</title>
+	<link rel="stylesheet" type="text/css" href="css/global.css?version=1">
+	<link rel="stylesheet" type="text/css" href="css/fonts.css?version=1">
 </head>
 
 <body>
 
-    <h1 styles="font-family: Quantum">
-        GAME STATION JSP
-    </h1>
+    <div id="capaTitulo">
+			<h1 id="titulo">
+					GAME STATION JSP
+			</h1>
+    </div>
 
-    <p id="testTarget"> Isso é um parágrafo!</p>
+    <div id="cab">
+			<span class="cabCell"><span class="cabCellText">Home</span></span>
+			<span class="cabCell"><span class="cabCellText">Jogos</span></span>
+			<span class="cabCell"><span class="cabCellText">Categorias</span></span>
+			<span class="cabCell"><span class="cabCellText">Contato</span></span>
+    </div>
 
-    <button class="buttonToPage" onclick="nextPage();"> Ir para next </button>
-    <br><br>
-    <button class="buttonToSearch" onclick="testw3();"> Procurar no mysql (JS)</button>
+		<div class="pageInfo">
+			<p> Isso é um parágrafo!</p>
 
-    
+			<button class="buttonToPage" onclick="nextPage();"> Ir para next </button>
+			<br><br>
+			<button class="buttonToSearch" onclick="testw3();"> Procurar no mysql (JS)</button>
+
+			<span id="testTarget" ></span>
+		</div>
 
 </body>
 
 
 </html>
 
-
-<script>
-
-    function nextPage(){
-        window.location.href="next.jsp"
-    }
-
-    var sqlControl = 0;
-    function sqlTest(){
-        if(sqlControl == 0){
-            document.getElementById("testTarget").innerHTML = "Oi";
-            sqlControl = 1;
-        }
-        else{
-            document.getElementById("testTarget").innerHTML = "Ei";
-            sqlControl = 0;
-        }
-        console.log("Apertou");
-    }
-
-    function testw3() {
-            
-        xmlhttp=new XMLHttpRequest();
-
-        xmlhttp.onreadystatechange=function() {
-            if (this.readyState==4 && this.status==200) {
-                document.getElementById("testTarget").innerHTML=this.responseText;
-            }
-        }
-        xmlhttp.open("test","Search.php",true);
-        xmlhttp.send();
-    }
-
-
-
-</script>
+ <script src="scripts/script.js"></script>
