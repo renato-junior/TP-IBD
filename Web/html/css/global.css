@@ -1,18 +1,15 @@
-:root {
-    /*--main-bg-color: coral;*/   
-}
-
-
 
 body {
     font-family: Helvetica;
+    color:white;
+    background: grey;
 }
 
 button {
-    --button-color : #00bfff; 
-    background: transparent;
+    --button-color : white; 
+    background: #383838;
     border-radius: 7px;
-    border-color: var(--button-color);
+    border-color: transparent;
     border-style: solid;
     padding: 6px;
     padding-right: 15px;
@@ -31,11 +28,77 @@ button {
 }
 
 button:hover {
-    color: white;
     cursor: hand;
-    background: var(--button-color);
+    color: white;
+    background: red;
+    border-color: red;
 }
 
 .buttonToSearch {
     --button-color : red; 
+}
+
+#capaTitulo {
+    background: #6b6b6b;
+    position: relative;
+    height: 100px;
+    width: 935px;
+    left: 50%;
+    transform: translate(-50%, 0%);
+}
+
+#titulo {
+    font-family: Quantum;
+    text-align: center;
+    position: relative;
+    top: 20%;
+}
+
+#cab {
+    font-size: 20px;
+    position: relative;
+    background: rgb(59, 59, 59);
+    text-align: center;
+    height: 40px;
+    width: 935px;
+    left: 50%;
+    transform: translate(-50%, 0%);
+}
+
+.cabCell {
+    display: inline-block;
+    height: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    position: relative;
+    margin-right: -5px;
+    padding-right: 10px;
+    padding-left: 10px;
+
+    transition:.3s;
+    -o-transition:.3s;
+    -ms-transition:.3s;
+    -moz-transition:.3s;
+    -webkit-transition:.3s;
+}
+
+.cabCell:hover {
+    cursor: hand;
+    color: white;
+    background: rgb(206, 0, 0);
+}
+.cabCellText {
+    position: relative;
+    top: 20%;
+}
+
+.pageInfo {
+    position: relative;
+    width: 930px;
+    height: 100%;
+    left: 50%;
+    transform: translate(-50%, 0%);
+    background-color: #686767;
+    box-sizing: border-box;
+    padding: 20px;
 }
