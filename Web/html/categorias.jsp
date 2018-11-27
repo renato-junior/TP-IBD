@@ -23,7 +23,7 @@
     </div>
 
 		<div class="pageInfo">
-			<p> INDEX </p>
+			<p> CATEGORIAS </p>
 
 			<button class="buttonToSearch" onclick="testw3();"> Procurar no banco</button>
 

@@ -23,9 +23,13 @@
     </div>
 
 		<div class="pageInfo">
-			<p> INDEX </p>
+			<p> JOGOS </p>
 
-			<button class="buttonToSearch" onclick="testw3();"> Procurar no banco</button>
+			<form id="myForm">
+				Nome do Jogo<br>
+				<input type="text" name="firstname" id="myInput">
+				<button type="button" class="buttonToSearch" onclick="test('myInput');" style="margin-left: 10px;"> Procurar no banco</button>
+			</form> 
 
 			<span id="testTarget" ></span>
 		</div>
@@ -37,3 +41,11 @@
 
 <script src="scripts/script.js"></script>
 <script src="scripts/nextPage.js"></script>
+
+<script>
+
+	function test(str){
+		document.getElementById("testTarget").innerHTML = document.getElementById(str).value;
+	}
+
+</script>

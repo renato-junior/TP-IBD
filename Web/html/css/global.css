@@ -1,6 +1,6 @@
 
 body {
-    font-family: Helvetica;
+    font-family: sans-serif, Arial, Helvetica, sans-serif;
     color:white;
     background: grey;
 }
@@ -28,7 +28,7 @@ button {
 }
 
 button:hover {
-    cursor: hand;
+    cursor: pointer;
     color: white;
     background: red;
     border-color: red;
@@ -83,7 +83,7 @@ button:hover {
 }
 
 .cabCell:hover {
-    cursor: hand;
+    cursor: pointer;
     color: white;
     background: rgb(206, 0, 0);
 }

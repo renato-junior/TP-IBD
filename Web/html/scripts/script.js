@@ -1,9 +1,5 @@
 
 
-    function nextPage(){
-        window.location.href="next.jsp"
-    }
-
     var sqlControl = 0;
     function sqlTest(){
         if(sqlControl == 0){
@@ -26,7 +22,7 @@
                 document.getElementById("testTarget").innerHTML=this.responseText;
             }
         }
-        xmlhttp.open("test","Search.php",true);
+        xmlhttp.open("test","search.php",true);
         xmlhttp.send();
     }
 

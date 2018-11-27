@@ -22,13 +22,12 @@
 			<span class="cabCell"><buttom onclick="nextPage('contato');" class="cabCellText">Contato</buttom></span>
     </div>
 
-		<div class="pageInfo">
-			<p> INDEX </p>
+	<div class="pageInfo">
+		<p> CONTATO </p>
 
-			<button class="buttonToSearch" onclick="testw3();"> Procurar no banco</button>
-
-			<span id="testTarget" ></span>
-		</div>
+		
+		<span id="testTarget" ></span>
+	</div>
 
 </body>
 
