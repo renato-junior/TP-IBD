@@ -22,6 +22,7 @@ for row in result :
     print(i, "/", rowcount)
     i+=1
     try :
+        db.ping(True)
         filename = urllib.request.urlretrieve(row[1])[0]
         blob_value = open(filename, 'rb').read()
         # encoded_string = base64.b64encode(blob_value)
@@ -29,11 +30,10 @@ for row in result :
         args = (row[0], blob_value)
         cur = db.cursor()
         cur.execute(sql, args)
-        db.ping(True)
+        db.commit()
     except (MySQLdb.Error, MySQLdb.Warning) as e:
         print(e)
     except:
         print("URL inválida: ", row[1])
 
-db.commit()
 db.close()
