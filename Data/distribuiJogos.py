@@ -2,7 +2,7 @@
 import csv, sys, random, collections
 
 numUsers = 10000
-maxGames = 500
+maxGames = 50
 ownedGames = []
 
 outputFile = open('owners.csv', 'w')
