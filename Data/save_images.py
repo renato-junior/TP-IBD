@@ -2,11 +2,12 @@ import sys
 import base64
 import MySQLdb
 import urllib.request
- 
-db = MySQLdb.connect(host="192.168.0.200",  # your host 
-                     user="USER",       # username
-                     passwd="PASSWORD",     # password
-                     db="GameMultiple")   # name of the database
+import getpass
+
+db = MySQLdb.connect(host="localhost",    # your host, usually localhost
+                     user="root",         # your username
+                     passwd=getpass.getpass("Insira senha\n"),  # your password
+                     db="GameMultiple")        # name of the data base
 
 cur = db.cursor()
 
